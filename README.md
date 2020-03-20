@@ -81,7 +81,7 @@ class WSWebSocketTest(unittest.TestCase):
       c.assert_called_once_with(1006, "Going away")
       cc.assert_called_once_with()
       self.assertIsNone(ws.stream)
-      self.asertIsNone(ws.environ)
+      self.assertIsNone(ws.environ)
   
   def test_terminate_with_closing(self):
     m = MagicMock()
